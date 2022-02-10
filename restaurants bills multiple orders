@@ -1,0 +1,98 @@
+
+#include <iostream>
+using namespace std;
+void menu()
+{
+  	char name [80] ;
+  	cout<<"enter the name of the customer"<<endl;
+  	cin>>name;
+  	cout<<"menu"<<endl;
+  	cout<<"1).....Sausage..... Rs=220 "<<endl;
+  	cout<<"2).....Cheese and Mushroom Omelet..... Rs=50 "<<endl;
+  	cout<<"3).....Coffee..... Rs=120 "<<endl;
+  	cout<<"4).....Paratha..... Rs=25"<<endl;
+	cout<<"5)......French Toast..... Rs=45 "<<endl;
+	cout<<"6).....Tea..... Rs=40 "<<endl;
+	cout<<"7).....Pan cake with Nutella serving..... Rs=395 "<<endl;
+}
+    main()
+{
+	float hsn;
+	int n;
+	int qty [7];
+	int no[7];
+	long price [7], tot[7];
+	string name [7];
+	float change,pay;
+	menu();
+	cout<<"how many types of menu do you want to order ?:",cin>>n;
+	if (n>0 && n<=7)
+	{
+	for (int i=0; i<n; i++)
+	{
+	cout<<"enter your choice "<<i+1<<"=";
+	cin>>no[i];
+	cout<<"enter amount =";cin>>qty[i];
+	if (no[i]==1)
+	{
+	name [i]="sausage";
+	price [i]=220;
+	tot [i]=price[i]*qty[i];
+		
+		}
+		else if (no[i]==2)
+		{
+		name [i]="cheese and mashroom omelet";
+	price [i]=50;
+	tot [i]=price[i]*qty[i];	
+	}
+			else if (no[i]==2)
+		{
+		name [i]="coffee";
+	price [i]=120;
+	tot [i]=price[i]*qty[i];			
+	}
+		else if (no[i]==2)
+		{
+		name [i]="paratha";
+	price [i]=25;
+	tot [i]=price[i]*qty[i];		
+	}
+		else if (no[i]==2)
+		{
+		name [i]="french toast";
+	price [i]=45;
+	tot [i]=price[i]*qty[i];	
+    }
+    	else if (no[i]==2)
+		{
+		name [i]="tea";
+	price [i]=40;
+	tot [i]=price[i]*qty[i];	
+    }
+    	else if (no[i]==2)
+		{
+		name [i]="pancake with nutella serving";
+	price [i]=395;
+	tot [i]=price[i]*qty[i];	
+    }
+    hsn=hsn+tot[i];
+   }
+   system ("cls");
+   menu ();
+   cout<<"your choice is:"<<endl;
+   for (int i=0;i<n;i++)
+   {
+   	cout<<""<<qty[i]<<"item"<<""<<name[i]<<endl;
+   	cout<<"price/item="<<price[i]<<endl;
+   	cout<<"total price"<<name[i]<<"="<<tot[i]<<endl;
+   }
+   cout<<"paid :rp.";
+   cin>>pay;
+   change=pay-hsn;
+   cout<<"change:rp."<<change<<endl;
+  }
+  else
+  cout<<"wrong order";
+  return 0;
+ }
