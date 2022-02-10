@@ -1,0 +1,35 @@
+
+#include<iostream>
+using namespace std;
+int main ()
+{
+	char grade;
+	cout<<"Enter your grade:";
+	cin>>grade;
+	if  (grade=='A'|| grade==' a')
+	{ cout<<"Your average must be between 90 – 100"<<endl;
+	
+	}
+	else if(grade=='B'|| grade=='b')
+	{ 
+	cout<<"Your average must be between 80 - 89"<<endl;
+	}
+	else if(grade=='C'|| grade=='c')
+	{
+	cout<<"Your average must be between 70 - 79";
+	}
+	else if(grade=='D'|| grade=='d') 
+	{
+	cout<<"Your average must be between 60 - 69";	
+	}
+	else if(grade=='default')
+	{cout<<"Your average must be below 60";
+	}
+	
+	
+	
+	
+	
+	
+	return 0;
+}
