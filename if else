@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+ 
+      int a,b,c;
+      cout<<"enter any two numbers"<<endl;
+      cin>>a>>b;
+      char op;
+      cout<<"enter any operand(+,-,*,/)"<<endl;
+      cin>>op;
+      if (op=='+')
+      {
+	  cout<<"addition of two numbers is "<<a+b<<endl;
+      
+      }
+      else if (op=='-')
+      {
+      	cout<<"substraction of two numbers is "<<a-b<<endl;
+      }
+      else if (op=='*')
+      {
+      	cout<<"product of two numbers is "<<a*b<<endl;
+      }
+      else if (op=='/')
+      {
+      	cout<<"ratio of two numbers is "<<a/b<<endl;
+      }
+      
+      return 0; 
+}
